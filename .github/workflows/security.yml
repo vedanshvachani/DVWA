@@ -5,6 +5,10 @@ on:
   push:
     branches: [ main ]
 
+permissions: 
+  contents: read
+  security-events: write
+  
 jobs:
   semgrep:
     uses: vedanshvachani/secure-ci-templates/.github/workflows/semgrep.yml@main
