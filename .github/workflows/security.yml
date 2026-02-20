@@ -13,4 +13,4 @@ jobs:
   semgrep:
     uses: vedanshvachani/secure-ci-templates/.github/workflows/semgrep.yml@main
     with:
-      scan_path: "."
+      scan_path: "." 
