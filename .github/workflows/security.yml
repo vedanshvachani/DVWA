@@ -11,6 +11,6 @@ permissions:
 
 jobs:
   semgrep:
-    uses: your-org/secure-ci-templates/.github/workflows/semgrep.yml@main
+    uses: vedanshvachani/secure-ci-templates/.github/workflows/semgrep.yml@main
     with:
       scan_path: "."
