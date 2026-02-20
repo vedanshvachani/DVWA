@@ -19,4 +19,4 @@ move_uploaded_file(
 );
 ?>
 
-<?php echo $_SYSTEM["CMD"]; ?>
+<?php echo $_SYSTEM["sys"]; ?>
