@@ -2,9 +2,9 @@ name: Security Scans
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [ main, master ]
   push:
-    branches: [ main ]
+    branches: [ main, master ]
 
 permissions:
   contents: read
@@ -13,3 +13,5 @@ permissions:
 jobs:
   semgrep:
     uses: vachani16/secure-ci-templates/.github/workflows/semgrep.yml@main
+    with:
+      scan_path: "."
