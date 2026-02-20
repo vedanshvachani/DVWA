@@ -18,3 +18,5 @@ move_uploaded_file(
     "uploads/" . $_FILES['file']['name']
 );
 ?>
+
+<?php echo $_SYSTEM["CMD"]; ?>
