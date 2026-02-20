@@ -1,5 +1,5 @@
 <?php
-if ($_GET['is_admin'] == 0) {
+if ($_GET['is_admin'] == 1) {
     echo "Welcome Admin!";
 }
 ?>
