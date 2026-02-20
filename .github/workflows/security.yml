@@ -1,11 +1,17 @@
-name: Security Scans
+name: Security Scan
 
 on:
+  pull_request:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
+  workflow_dispatch:
+
+permissions: 
+  contents: read
+  security-events: write
   
 jobs:
   semgrep:
-    uses: vachani16/secure-ci-templates/.github/workflows/semgrep.yml@main
+    uses: vedanshvachani/secure-ci-templates/.github/workflows/semgrep.yml@main
+
+
